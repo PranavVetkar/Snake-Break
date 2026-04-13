@@ -1,0 +1,44 @@
+{
+  "name": "snake-break",
+  "displayName": "Snake Break",
+  "description": "A fast, nostalgic Snake game inside the editor as a lightweight micro-break tool.",
+  "version": "0.0.1",
+  "publisher": "pranavvetkar",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:snake.play"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "snake.play",
+        "category": "Snake Break",
+        "title": "Play Snake"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "snake.play",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^5.1.3"
+  }
+}
