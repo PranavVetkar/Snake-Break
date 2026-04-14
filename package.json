@@ -1,6 +1,6 @@
 {
   "name": "snake-break-vscode",
-  "displayName": "Snake Break",
+  "displayName": "Snake Break: Play Snake in VS Code",
   "description": "A fast, nostalgic Snake game inside the editor as a lightweight micro-break tool.",
   "version": "0.0.1",
   "publisher": "PranavVetkar",
